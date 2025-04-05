@@ -77,7 +77,7 @@ echo         "Programming Language :: Python :: 3.7", >> "%PROJECT_DIR%\setup.py
 echo         "Programming Language :: Python :: 3.8", >> "%PROJECT_DIR%\setup.py"
 echo         "Programming Language :: Python :: 3.9", >> "%PROJECT_DIR%\setup.py"
 echo     ], >> "%PROJECT_DIR%\setup.py"
-echo     python_requires="^>=3.6", >> "%PROJECT_DIR%\setup.py"
+echo     python_requires=">=3.6", >> "%PROJECT_DIR%\setup.py"
 echo ^) >> "%PROJECT_DIR%\setup.py"
 
 REM Create requirements.txt

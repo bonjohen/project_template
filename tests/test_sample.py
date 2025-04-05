@@ -2,7 +2,7 @@
 
 import pytest
 
-from vsc_template.sample import hello
+from test_py_project.sample import hello
 
 
 def test_hello():
