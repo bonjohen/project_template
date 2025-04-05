@@ -302,21 +302,16 @@ echo .env.production.local >> "%PROJECT_DIR%\.gitignore"
 
 REM Create __init__.py in the project package
 echo Creating __init__.py...
-echo """  > "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
-echo %PROJECT_NAME% package. >> "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
-echo """ >> "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
+echo """Package for %PROJECT_NAME%.""" > "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
 echo. >> "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
 echo __version__ = "0.1.0" >> "%PROJECT_DIR%\%PROJECT_NAME%\__init__.py"
 
 REM Create a sample module
 echo Creating sample module...
-echo """  > "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
-echo Sample module. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
-echo """ >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
+echo """Sample module.""" > "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 echo. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 echo def hello^(name: str^) -^> str: >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
-echo     """ >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
-echo     Return a greeting message. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
+echo     """Return a greeting message. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 echo. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 echo     Args: >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 echo         name: The name to greet. >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
@@ -332,9 +327,7 @@ echo     print^(hello^("World"^)^) >> "%PROJECT_DIR%\%PROJECT_NAME%\sample.py"
 
 REM Create a sample test
 echo Creating sample test...
-echo """  > "%PROJECT_DIR%\tests\test_sample.py"
-echo Tests for the sample module. >> "%PROJECT_DIR%\tests\test_sample.py"
-echo """ >> "%PROJECT_DIR%\tests\test_sample.py"
+echo """Tests for the sample module.""" > "%PROJECT_DIR%\tests\test_sample.py"
 echo. >> "%PROJECT_DIR%\tests\test_sample.py"
 echo import pytest >> "%PROJECT_DIR%\tests\test_sample.py"
 echo. >> "%PROJECT_DIR%\tests\test_sample.py"
@@ -348,9 +341,7 @@ echo     assert hello^("Python"^) == "Hello, Python!" >> "%PROJECT_DIR%\tests\te
 
 REM Create test __init__.py
 echo Creating tests/__init__.py...
-echo """  > "%PROJECT_DIR%\tests\__init__.py"
-echo Test package. >> "%PROJECT_DIR%\tests\__init__.py"
-echo """ >> "%PROJECT_DIR%\tests\__init__.py"
+echo """Test package.""" > "%PROJECT_DIR%\tests\__init__.py"
 
 REM Create pyproject.toml
 echo Creating pyproject.toml...
