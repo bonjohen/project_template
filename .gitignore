@@ -1,6 +1,11 @@
 # Project template test directories
 test_*_project*/
 
+# Generated project directories
+*_project/
+*_app/
+*_site/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -82,6 +87,12 @@ jspm_packages/
 *.tsbuildinfo
 dist/
 
+# Next.js specific
+.next/
+out/
+.vercel/
+.turbo/
+
 # Optional npm cache directory
 .npm
 
@@ -101,8 +112,33 @@ dist/
 .vscode/
 *.swp
 *.swo
+*.sublime-*
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.code-workspace
+.history/
 
 # OS files
 .DS_Store
+.DS_Store?
 Thumbs.db
 ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Backup and temporary files
+*~
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
+*.swp
+*.swo
+.#*
+*#
+*~

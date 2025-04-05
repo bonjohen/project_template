@@ -1,4 +1,4 @@
-# test_js_project 
+# test_py_project 
  
 A short description of the project. 
  
@@ -6,33 +6,33 @@ A short description of the project.
  
 ```bash 
 # Clone the repository 
-git clone https://github.com/yourusername/test_js_project.git 
-cd test_js_project 
+git clone https://github.com/yourusername/project_template.git 
+cd project_template 
  
 # Install dependencies 
-npm install 
+pip install -r requirements.txt 
 ``` 
  
 ## Usage 
  
-```javascript 
-const { hello } = require('test_js_project'); 
+```python 
+from test_py_project import hello 
  
-// Add usage examples here 
+# Add usage examples here 
 ``` 
  
 ## Development 
  
 ```bash 
 # Run tests 
-npm test 
+pytest 
  
 # Run tests with coverage 
-npm run coverage 
+pytest --cov 
  
 # Lint code 
-npm run lint 
+flake8 
  
 # Format code 
-npm run format 
+black . 
 ``` 
