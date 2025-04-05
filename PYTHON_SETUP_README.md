@@ -12,6 +12,7 @@ This script automates the creation of a new Python project with a standard direc
 - Configures tools like Black, isort, and mypy
 - Adds a LICENSE file (MIT)
 - Creates a README.md with usage instructions
+- Provides tests to validate source control setup and project structure
 
 ## Usage
 
@@ -40,7 +41,9 @@ project_name/
 │   └── sample.py
 ├── tests/
 │   ├── __init__.py
-│   └── test_sample.py
+│   ├── test_sample.py
+│   ├── test_source_control.py
+│   └── test_template_structure.py
 ├── docs/
 ├── venv_project_name/
 ├── setup.py
@@ -61,8 +64,29 @@ After running the script:
 2. Install dependencies: `pip install -r requirements.txt`
 3. Install the package in development mode: `pip install -e .`
 4. Run tests: `pytest`
+5. Validate source control setup: `pytest tests/test_source_control.py -v`
+6. Validate project structure: `pytest tests/test_template_structure.py -v`
 
 If you need to activate the virtual environment later, use the `activate.cmd` script.
+
+### Source Control Validation
+
+The included source control validation tests check that:
+
+- The Git repository is properly initialized
+- Required Git configuration is in place
+- The project has appropriate `.gitignore` settings
+- The project structure follows best practices
+- At least one commit exists in the repository
+
+### Project Structure Validation
+
+The project structure validation tests ensure:
+
+- Consistent project naming across files
+- Proper virtual environment setup
+- Expected package structure with required files
+- Documentation and dependency files are present and properly formatted
 
 ## Requirements
 
